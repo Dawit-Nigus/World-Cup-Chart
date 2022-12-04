@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup 2022</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+ 
+  <div class="bg">
+    <div class="" style="text-align:center ;">
+      <span class="top right"></span>
+      <span class="top left"></span>
+      <br><br>
+      <h1> 👋 World Cup </h1>
+      <span class="bottom right"></span>
+      <span class="bottom left"></span>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+     <div class="container">
+    <div class="popular-articles">
+      <header class="popular-header header-card">
+        <h3 class="header-card-title">
+          WORLD <br>CUP <br>2022
+        </h3>
+        <p >In Qatar<br> </p>
+          </header>
+
+      <div class="mini-card-grid">
+    <article class="mini-card ">
+      <header class="mini-article-card-header">
+        <div class="mini-article-card-title">
+          <h2 class="">
+            <a href="" class="article-card-header">Group 1 </a>
+          </h2>
+        </div>
+      </header>
+      <div class="mini-article-meta">
+        <div class="mini-article-byline">
+          <li>Spain</li>
+          <input id="scoree" type="number" placeholder="score" />
+         <li>Spain</li>
+         <input id="scoref" type="number" placeholder="score" />
+         <li>Spain</li>
+         <input id="scoreg" type="number" placeholder="score" />
+         <li>Spain</li>
+         <input id="scoreh" type="number" placeholder="score" />
+        </div>
+          <div class="tags">
+            <input type="button" class="btn btn-dark" value="Save" onclick="insert1()" />
+            <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData1()">Chart!</button> 
+      </div>
+    </article>
+    <article class="mini-card ">
+      <header class="mini-article-card-header">
+        <div class="mini-article-card-title">
+          <h2 class="">
+            <a href="" class="article-card-header">Group 2 </a>
+          </h2>
+        </div>
+      </header>
+      <div class="mini-article-meta">
+        <div class="mini-article-byline">
+          <li>Italy</li>
+          <input id="scorea" type="number" placeholder="score" />
+         <li>Italy</li>
+         <input id="scoreb" type="number" placeholder="score" />
+         <li>Italy</li>
+         <input id="scorec" type="number" placeholder="score" />
+         <li>Italy</li>
+         <input id="scored" type="number" placeholder="score" />
+        </div>
+          <div class="tags">
+            <input type="button" class="btn btn-dark" value="Save" onclick="insert()" />
+        <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData2()">Chart!</button> 
+      </div>
+    </article>
+    <article class="mini-card ">
+      <header class="mini-article-card-header">
+        <div class="mini-article-card-title">
+          <h2 class="">
+            <a href="" class="article-card-header">Group 3 </a>
+          </h2>
+        </div>
+      </header>
+      <div class="mini-article-meta">
+        <div class="mini-article-byline">
+          <li>Portugal</li>
+          <input id="scorei" type="number" placeholder="score" />
+         <li>Portugal</li>
+         <input id="scorej" type="number" placeholder="score" />
+         <li>Portugal</li>
+         <input id="scorek" type="number" placeholder="score" />
+         <li>Portugal</li>
+         <input id="scorel" type="number" placeholder="score" />
+        </div>
+          <div class="tags">
+            <input type="button" class="btn btn-dark" value="Save" onclick="insert3()" />
+        <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData3()">Chart!</button> 
+      </div>
+    </article>
+    <article class="mini-card ">
+      <header class="mini-article-card-header">
+        <div class="mini-article-card-title">
+          <h2 class="">
+            <a href="" class="article-card-header">Group 4 </a>
+          </h2>
+        </div>
+      </header>
+      <div class="mini-article-meta">
+        <div class="mini-article-byline">
+          <li>Brazil</li>
+          <input id="scorem" type="number" placeholder="score" />
+         <li>Brazil</li>
+         <input id="scoren" type="number" placeholder="score" />
+         <li>Brazil</li>
+         <input id="scoreo" type="number" placeholder="score" />
+         <li>Brazil</li>
+         <input id="scorep" type="number" placeholder="score" />
+        </div>
+          <div class="tags">
+            <input type="button" class="btn btn-dark" value="Save" onclick="insert4()" />
+        <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = addData4()">Chart!</button> 
+      </div>
+    </article>
+    </div>
+  </div>
+  <div class="container">
+    <canvas id="myChart" style="width:100%;max-width:600px;height: 300px;"></canvas>
+  </div>
+</div>
+
+
+<script src="chart.js"></script>
+</body>
+</html>

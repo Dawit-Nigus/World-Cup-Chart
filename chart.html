@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet"href="bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+     <div class="row">
+        <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="qatar.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Group 1</h5>
+         <li>Spain</li>
+         <li>Spain</li>
+         <li>Spain</li>
+         <li>Spain</li>
+         <input id="scoree" type="number" placeholder="score" />
+         <input id="scoref" type="number" placeholder="score" />
+         <input id="scoreg" type="number" placeholder="score" />
+         <input id="scoreh" type="number" placeholder="score" />
+         <input type="button" class="btn btn-success" value="Save" onclick="insert1()" />
+        <button class="btn btn-success" type="button" onclick="getElementById('myChart').innerHTML = addData1()">Chart!</button> 
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-2">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="qatar.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Group 2</h5>
+         <li>Italy</li>
+         <li>Italy</li>
+         <li>Italy</li>
+         <li>Italy</li>
+         <input id="scorea" type="number" placeholder="score" />
+         <input id="scoreb" type="number" placeholder="score" />
+         <input id="scorec" type="number" placeholder="score" />
+         <input id="scored" type="number" placeholder="score" />
+         <input type="button" class="btn btn-success" value="Save" onclick="insert()" />
+        <button class="btn btn-success" type="button" onclick="getElementById('myChart').innerHTML = addData2()">Chart!</button> 
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-2">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="qatar.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Group 3</h5>
+         <li>Portugal</li>
+         <li>Portugal</li>
+         <li>Portugal</li>
+         <li>Portugal</li>
+         <input id="scorei" type="number" placeholder="score" />
+         <input id="scorej" type="number" placeholder="score" />
+         <input id="scorek" type="number" placeholder="score" />
+         <input id="scorel" type="number" placeholder="score" />
+         <input type="button" class="btn btn-success" value="Save" onclick="insert3()" />
+        <button class="btn btn-success" type="button" onclick="getElementById('myChart').innerHTML = addData3()">Chart!</button> 
+        </div>
+      </div>
+    </div>
+      
+    <div class="col-sm-2">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="qatar.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Group 4</h5>
+         <li>Brazil</li>
+         <li>Brazil</li>
+         <li>Brazil</li>
+         <li>Brazil</li>
+         <input id="scorem" type="number" placeholder="score" />
+         <input id="scoren" type="number" placeholder="score" />
+         <input id="scoreo" type="number" placeholder="score" />
+         <input id="scorep" type="number" placeholder="score" />
+         <input type="button" class="btn btn-success" value="Save" onclick="insert4()" />
+        <button class="btn btn-success" type="button" onclick="getElementById('myChart').innerHTML = addData4()">Chart!</button> 
+        </div>
+      </div>
+    </div>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script src="chart.js"></script>
+
+</body>
+</html>
